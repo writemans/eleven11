@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+                margin:0;
+                padding:0;
+                list-style: none;
+        }
+        html{
+                font-size:62.5%;
+        }
+        body{
+                background: #ccc;
+        }
+        .wrap{
+                display: flex;
+                flex-direction:column;
+                height:100%;
+                width:100%;
+        }
+        header{
+            height:3.5rem;
+            background: #000;
+            color:#fff;
+            font-size:1.6rem;
+            justify-content: space-around;
+            align-items: center;
+            line-height: 3.5rem;
+        }
+        header a{
+                color:#fff;
+                padding-left: 1rem;
+                float:left;
+        }
+        header a:last-child{
+                float:right;
+                padding-right: 1rem;
+        }
+        main{
+                flex:1;
+                width:100%;
+        }
+        main dl dt img{
+                width:50%;
+                height:auto;
+                margin-top:3rem;
+                margin-left:25%;
+        }
+        main dl dd{
+                text-align:center;
+                font-size:1.8rem;
+        }
+        .box{
+                width:90%;
+                margin-left:5%;
+                background: #fff;
+                border-radius: 20px;
+                margin-top:4rem;
+        }
+        input{
+            height:2rem;
+            width:80%;
+            margin-top:3rem;
+            margin-left:10%;
+            border:none;
+            border-bottom:1px solid green;
+        }
+        input:last-child{
+            background: green;
+            color:#fff;
+            height:2.2rem;
+            margin-bottom:6rem;
+        }   
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a>x</a>
+            <a>设备测试预约系统</a>
+            <a>x</a>
+        </header>
+        <main>
+            <div class="box">
+                <dl>
+                    <dt><img src="img/logo_01.png" alt=""></dt>
+                    <dd>设备测试预约系统</dd>
+                </dl>
+                <input type="text" placeholder="请输入手机号码">
+                <input type="text" placeholder="请输入密码">
+                <input type="button" value='登陆账号开始预约'>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
